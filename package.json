@@ -1,0 +1,42 @@
+{
+  "name": "tuborepo-next",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "e2e",
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.3",
+    "@testing-library/dom": "^8.17.1",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/ramda": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/testing-library__cypress": "^5.0.9",
+    "eslint-config-custom": "*",
+    "jsdom": "latest",
+    "prettier": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "turbo": "latest",
+    "typescript": "latest",
+    "vitest": "latest",
+    "vitest-axe": "latest",
+    "vitest-dom": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@1.22.11"
+}

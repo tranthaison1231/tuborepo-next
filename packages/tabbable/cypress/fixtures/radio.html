@@ -1,0 +1,47 @@
+<div>
+  <form>
+    <fieldset>
+      <legend>form1 groupA - initial checked</legend>
+      <input type="radio" name="groupA" checked value="a" id="form1-radioA" />
+      <input type="radio" name="groupA" value="b" id="form1-radioB" />
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+      <legend>form2 groupA - no checked</legend>
+      <input type="radio" name="groupA" value="a" id="form2-radioA" />
+      <input type="radio" name="groupA" value="b" id="form2-radioB" />
+    </fieldset>
+  </form>
+
+  <form>
+    <p>form3 groupA - no fieldset - no checked</p>
+    <input type="radio" name="groupA" value="a" id="form3-radioA" />
+    <input type="radio" name="groupA" value="b" id="form3-radioB" />
+  </form>
+
+  <fieldset>
+    <legend>no form groupA - initial checked</legend>
+    <input type="radio" name="groupA" value="a" checked id="noform-radioA" />
+    <input type="radio" name="groupA" value="b" id="noform-radioB" />
+  </fieldset>
+
+  <fieldset>
+    <legend>no form groupB - no checked</legend>
+    <input type="radio" name="groupB" value="a" id="noform-groupB-radioA" />
+    <input type="radio" name="groupB" value="b" id="noform-groupB-radioB" />
+  </fieldset>
+
+  <fieldset>
+    <legend>no form groupC - names with CSS selector characters</legend>
+    <input
+      type="radio"
+      name='"groupC"'
+      value="a"
+      checked
+      id="noform-groupC-radioA"
+    />
+    <input type="radio" name='"groupC"' value="b" id="noform-groupC-radioB" />
+  </fieldset>
+</div>
